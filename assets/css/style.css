@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 :root {
     --primary: rgba(68, 88, 119, 1);
@@ -32,12 +33,11 @@ nav a:hover {
     background-size: 100% 100%;
     color: var(--primary);
   }
-
-  main {
+main {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-
+    border-right: 10px;
 }
 
 header {
@@ -45,10 +45,11 @@ header {
     justify-content: space-between;
     padding-bottom: 20PX;
     flex-wrap: wrap;
-    background-color: var(--tertiary)
+    background-color: var(--tertiary);
 }
 
 h1 {
+    display: flex;
     padding-left: 150px;
     padding-right: 10px;
     padding-top: 5px;
@@ -58,14 +59,123 @@ h1 {
 
 h2 {
     display: flex;
-    flex-wrap: wrap;
     position: absolute;
-    background-color: var(--secondary);
+    background-color:var(--secondary);
+    flex-wrap: wrap;
+    padding: 10px 15px;
+    margin-bottom: -20px;
+}
+.aboutme {
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px;
+  
+
 }
 
-section {
-    background-image: url(./images/02-hero-bg.jpg);
-    height: 150px;
+.aboutme h3 {
+    display: flex;
+    flex:0 0 25%;
+    font-size: xx-large;
+    padding-right: 15px;
+    padding-left: 90px;
+    line-height: 1.1;
+}
+
+.section {
+    flex-wrap: wrap;
+    flex: 0 75%;
+    border-left:3px solid var(--tertiary);
+    padding-left:15px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+
+}
+#project h4 {
+    display: flex;
+}
+.aboutme div {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 75%;
+    border-left: 3px solid var(--tertiary);
+    padding-left: 15px;
+
+}
+
+
+.subtitle {
+    background-image:url("images/02-hero-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 40px 260px 40px;
+    height: 200px;
+
+}
+.small-img1 {
+    flex-wrap: wrap;
+    background-image: url(images/02-portfolio-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    border: 3px solid var(--secondary);
+    height: 200px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.small-img2 {
+    flex-wrap: wrap;
+    background-image: url(images/02-portfolio-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    border: 3px solid var(--secondary);
+    height: 200px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.small-img3 {
+    flex-wrap: wrap;
+    background-image: url(images/02-portfolio-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    border: 3px solid var(--secondary);
+    height: 200px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.small-img4 {
+    flex-wrap: wrap;
+    background-image: url(images/02-run-buddy.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    border: 3px solid var(--secondary)
+    height: 200px;
+    width: 400px;
+    margin: 10px 0;
+}
+
+.l-image {
+    
+        background-image: url(images/02-portfolio-4.jpg);
+        background-size: cover;
+        background-position: top;
+        background-blend-mode: overlay;
+        border:5px solid var(--secondary);
+        height: 300px;
+        width: 500px;
+        
 }
 nav {
   display: flex;
@@ -89,3 +199,10 @@ li a{
     padding: 15px 20px;
 
 }
+
+.contact nav {
+    font-size: 10px;
+
+}
+@media screen and (min-width: 798px);
+    
